@@ -1,0 +1,190 @@
+* {box-sizing: border-box; margin: 0;}
+
+:root { 
+    --body-background: hsl(0, 0%, 98%);
+    --primary-color: hsl(0, 0%, 9%);
+
+    --card-background: hsl(330, 5%, 92%);
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--body-background);
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+
+    text-align: center;
+}
+
+body > header h1,
+body > header p,
+footer p {
+    color: hsla(0, 0%, 98%, 1);
+}
+
+
+body > header h2 {
+    color: var(--primary-color);
+}
+
+.container {
+    width: 100%;
+
+    padding: 5rem 2rem;
+}
+
+.header-content {
+    width: 100%;
+}
+
+.descount {
+    width: 100%;
+
+    padding-block: 1.5rem;
+
+    font-weight: 500;
+    line-height: 196.19%;
+
+    background-color: var(--primary-color);
+}
+
+.page-title {
+    padding-block: 0.7rem;
+
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 196.19%;
+}
+
+.page-subtitle {
+    position: relative;
+
+    padding: 12.2rem 2rem;
+
+    background: url('./assets/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1.png') no-repeat;
+    background-size: 100%;
+}
+
+.image-background {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+}
+
+.image-color {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: hsla(0, 0%, 9%, 0.6);
+}
+
+.text {
+    position: relative;
+    text-align: left;
+
+    width: min(124rem, 100%);
+
+    margin-inline: auto;
+}
+
+.text h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+}
+
+.text p {
+    max-width: 42rem;
+
+    margin-top: 1.2rem;
+
+    font-weight: 600;
+    line-height: 180%;
+}
+
+.products-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.products-section header h3 {
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 196.19%;
+    
+    color: var(--primary-color);
+}
+
+.products-section header p {
+    font-weight: 500;
+
+    line-height: 180%;
+
+    color: hsl(0, 0%, 28%);
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    width: min(124rem, 100%);
+
+    margin-inline: auto;
+}
+
+.product-card {
+    cursor: pointer;
+
+    width: 37.4rem;
+    height: 30.2rem;
+
+    padding: 7.6rem 6.2rem;
+
+    background-color: var(--card-background);
+}
+
+.product-card img {
+    width: 100%;
+}
+
+footer {
+    padding-block: 1.3rem;
+    background-color: var(--primary-color);
+}
+
+
+
+
+@media (min-width: 460px) {
+    :root {
+        font-size: 66.5%;
+    }
+}
+
+@media (min-width: 1365px) {
+    .products {
+        gap: 1.3rem;
+    }
+
+    .product-card {
+        width: 30rem;
+        height: 30.2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .page-subtitle {
+        background: url('./assets/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1\ desktop.png');
+        background-size: 100%;
+    }
+}
